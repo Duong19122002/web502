@@ -18,7 +18,10 @@ function App() {
   const [products, setProducts] = useSate([{ id: 1, name: "A" }, { id: 2, name: "B" }]);
   return <div>
     Number: {count}<br />
-    String <div> style={}</div>
+    String <div style={{ backgroud: color, width: 100, height: 100 }}> Content</div>
+    Boolean: {myStatus ? "Da ket hon" : "Chua ket hon"}<br/>
+    <hr/>
+    Number: {count}<br/><button onclick={changeCount}>Click count</button>
   </div>
 }
 
