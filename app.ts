@@ -3,6 +3,7 @@ type Product = {
     name: string;
     price: number,
 }
+
 type Product2 = {
     id: number;
     name: string;
