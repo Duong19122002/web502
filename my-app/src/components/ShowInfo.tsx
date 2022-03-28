@@ -1,16 +1,16 @@
-import {Product} from '../types/product'
 
-type ShowINfoProps ={
-    person: Product
+import React from 'react'
 
+type ShowInfoProps = {
+    name: string,
+    age: number
 }
-const ShowInfo=(props:ShowINfoProps)=>{
-    console.log(props)
-    return(
-    <div>
-        <h1>{props.person.name}</h1>
-      <h1>{props.person.age}</h1>
-    </div>
-    )
+
+const ShowInfo = ({name}: ShowInfoProps) => {
+
+  return (
+    <div>Hi {name}</div>
+  )
 }
-export default ShowInfo;
+
+export default ShowInfo
