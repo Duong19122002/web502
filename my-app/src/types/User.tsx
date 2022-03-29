@@ -1,5 +1,6 @@
-export type User = {
-    name?: string,
-    email: string
-    password: string
+export type UserType={
+    id?:Number|String|undefined
+    name?:String,
+    email:String,
+    password:String
 }
