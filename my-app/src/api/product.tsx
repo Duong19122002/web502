@@ -1,7 +1,7 @@
 import { isauthenticate } from '../utils/localstoage';
 import instance from './instance';
 
-const {user,token}=isauthenticate() 
+// const {user,token}=isauthenticate() 
 export const get = () => {
     const url = `/products`;
     return instance.get(url)
