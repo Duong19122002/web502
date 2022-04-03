@@ -67,7 +67,7 @@ const UserManage = (props:ProudctManager) => {
                           <img src={`${e.img}`} alt="" />
                          </td>
                          <td className="px-4 py-4">
-                         {/* {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format((e.price))} */}
+                         {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format((e.price))}
                          </td>
                          <td className="px-4 py-4">
                            {e.quantity}
@@ -81,7 +81,7 @@ const UserManage = (props:ProudctManager) => {
                          <td className="px-4 py-4 text-sm font-bold">
                            <Link to={`/admin/product/${e._id}/edit`}  className="text-indigo-600 hover:text-indigo-900">Edit</Link>
                            <span className="text-indigo-600 hover:text-indigo-900">|</span>
-                          {/* <button onClick={()=>props.onRemove(e._id)} id="btndel">Xóa</button> */}
+                          <button onClick={()=>props.onRemove(e._id)} id="btndel">Xóa</button>
                           </td>
                        </tr>
                  )

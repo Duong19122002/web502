@@ -123,9 +123,9 @@ function App() {
         <Route
           path="admin"
           element={
-            
+            <PrivateRouter>
               <Adminlayout />
-          
+            </PrivateRouter>
           }
         >
           <Route index element={<h1>Test</h1>} />

@@ -14,7 +14,7 @@ const Herder = (props: Props) => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap='round' strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        <span>0989-999-999</span>
+                        <span>0962597441</span>
                     </div>
                     <div>
                         <a href="${linkUser}" className="mr-5">
@@ -36,7 +36,7 @@ const Herder = (props: Props) => {
             <div>
                 <div className="flex justify-between items-center w-11/12 m-auto">
                     <div className="py-3 w-1/6">
-                        <img src="http://4.bp.blogspot.com/-JO6KPiOuEvw/T_xqv95xmeI/AAAAAAAAAI8/cwQCTBaMFJU/s1600/Adidas+2_.png" className="w-20" />
+                        <img src="https://res.cloudinary.com/dcalzi23m/image/upload/v1644595451/js_advanced/logo_anjssy.png" className="w-full" />
                     </div>
                     <div className="py-3">
                     <Nav/>

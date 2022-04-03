@@ -9,18 +9,35 @@ const HomePage = (props: ProductProps) => {
    const [product,setproduct]=useState<ProductType[]>([]);
    const [productsale,setproductsale]=useState<ProductType[]>([]);
 
+   const newProduct=async()=>{
+    const {data}=await get()
+    setproduct(data)
+    // const newProduct=[];
+    // for(let i=data.length-5;i<data.length;i++){
+    //  newProduct.push(data[i])
+    // }
+    // setproduct(newProduct)
+  }
+
+  const hotsale=async()=>{
+    const {data}=await get()
+    const hotsale=[];
+    data.sort((a: any, b: any) => a.discount < b.discount ? 1 : (b.discount < a.discount ? -1 : 0))
+ 
+    for(let i=0;i<data.length;i++){
+     hotsale.push(data[i])
+     if(hotsale.length==5){
+         break;
+     }
+    }
+    setproductsale(hotsale)
+  }
+
+  //
    useEffect(()=>{
-       const productlist=async()=>{
-       const {data} =await get()
-        setproduct(data)
-       
-       }
-       productlist()
+      newProduct(),
+      hotsale()
    },[])
-
-  
-
-  
   return (
     <div>
         {product?.map((e,index)=>{
@@ -30,7 +47,13 @@ const HomePage = (props: ProductProps) => {
                 </div>
             )
         })}
-          
+           {productsale?.map((e,index)=>{
+            return(
+                <div key={index}>
+                    <h1>{e.name}</h1>
+                </div>
+            )
+        })}
     </div>
   )
 }

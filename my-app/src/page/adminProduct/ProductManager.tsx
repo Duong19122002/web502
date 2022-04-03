@@ -4,14 +4,14 @@ import { get } from '../../api/Product'
 import { ProductType } from '../../types/product'
 
 
-// type Product=[{
-//   _id: number,
-//   name: string,
-//   price: number,
-//   img:String,
-//   quantity:Number,
-//   desc:String  
-// }]
+type Product=[{
+  _id: number,
+  name: string,
+  price: number,
+  img:String,
+  quantity:Number,
+  desc:String  
+}]
 type ProudctManager={
   product:ProductType[],
   onRemove:(_id:string|number)=>void

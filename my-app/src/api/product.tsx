@@ -1,7 +1,7 @@
 import { isauthenticate } from '../utils/localstoage';
 import instance from './instance';
 
-// const {user,token}=isauthenticate() 
+const {user,token}=isauthenticate() 
 export const get = () => {
     const url = `/products`;
     return instance.get(url)
@@ -26,6 +26,11 @@ export const remove = (id:any) => {
     return instance.delete(url);
 }
 export const update = (products:any) => {
-    const url = `/products/${products._id}`;
-    return instance.put(url,products);
+    const url = `/products/${products._id}/${user._id}`;
+    return instance.put(url,products, {
+        headers: {
+            Authorization: `Bearer ${token}`,
+     
+        }
+    });
 }
