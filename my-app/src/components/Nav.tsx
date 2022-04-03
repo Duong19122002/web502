@@ -17,7 +17,7 @@ const Nav = (props: Props) => {
   return (
       <div>
           <ul>
-                <li className="inline"><NavLink className="px-3 text-lg font-semibold" to="/">Home Page</NavLink></li>
+                <li className="inline"><NavLink className="px-3 text-lg font-semibold" to="/">Trang chủ</NavLink></li>
                 <div className='relative inline'>
                 <li id="categories" className="inline"><a href="/" className="px-3 text-lg font-semibold py-16">Danh mục</a></li>
                 <ul className="sub_menu absolute left-0 z-50 bg-white">
@@ -28,7 +28,7 @@ const Nav = (props: Props) => {
                     })}
                 </ul>
                 </div>
-                <li className="inline"><NavLink className="px-3 text-lg font-semibold" to="/product">product</NavLink></li>
+                <li className="inline"><NavLink className="px-3 text-lg font-semibold" to="/product">Sản phẩm</NavLink></li>
                 <li className="inline"><a href="/order_manage" className="px-3 text-lg font-semibold">Đơn hàng</a></li>
                 <li className="inline"><a href="/" className="px-3 text-lg font-semibold">Bảo hành</a></li>
             </ul>

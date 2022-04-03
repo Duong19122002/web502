@@ -36,7 +36,7 @@ const Herder = (props: Props) => {
             <div>
                 <div className="flex justify-between items-center w-11/12 m-auto">
                     <div className="py-3 w-1/6">
-                        <img src="https://res.cloudinary.com/dcalzi23m/image/upload/v1644595451/js_advanced/logo_anjssy.png" className="w-full" />
+                        <img src="https://i.pinimg.com/originals/13/c4/02/13c40225b62fdcc37bbe05ef149c3619.png" className="w-full w-20" />
                     </div>
                     <div className="py-3">
                     <Nav/>
