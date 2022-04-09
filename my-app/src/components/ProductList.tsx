@@ -8,8 +8,9 @@ products:ProductType[];
 const ProductList = ({products}: ProductProps) => {
 
   return (
-    
+
     <div className="grid gap-6 grid-rows-1 mt-6">
+      
         <div className="row">
         {products?.map((e,index)=>{
          

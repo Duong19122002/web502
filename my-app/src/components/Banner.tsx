@@ -6,6 +6,7 @@ const Banner = (props: Props) => {
   return (
     <div>
         <img src="https://picsum.photos/1920/400" className='img-fluid' alt="" />
+        
     </div>
   )
 }

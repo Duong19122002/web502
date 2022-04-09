@@ -13,7 +13,6 @@ const Websitelayout = (props: Props) => {
   return (
     <div>
       <header>
-     
       <Herder/>
        <Banner/>
       </header>
