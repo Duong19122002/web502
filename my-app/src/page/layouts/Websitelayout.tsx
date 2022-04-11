@@ -14,7 +14,6 @@ const Websitelayout = (props: Props) => {
     <div>
       <header>
       <Herder/>
-       <Banner/>
       </header>
       <main>
       <Outlet/>

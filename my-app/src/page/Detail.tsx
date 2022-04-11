@@ -21,7 +21,7 @@ const Detail = (props: Props) => {
             <main className="grid place-items-center  bg-white max-w-7xl mx-auto my-12">
   <section className="max-w-7xl mx-auto py-10 grid grid-cols-2 gap-8 py-10 px-5  bg-gray-100 rounded-md shadow-lg w-3/4 md:max-w-2xl">
     <div className="text-indigo-500 flex flex-col justify-between">
-      <img className=" h-96 w-96" src={product?.img} />
+      <img className=" h-96 w-96" src={`${product?.img}`} />
     </div>
     <div className="text-indigo-500">   
       <h3 className="uppercase text-black text-2xl font-medium">{product?.name}</h3>
